@@ -16,4 +16,13 @@ INSERT INTO FOOTER VALUES (5, 'Kia Sportage', NULL, NULL, 18);
 
 SELECT * FROM FOOTER;
 
+-----------------Solution---------------------------------------
+Solution:-
+with cte1 as(
+select min(length) as len,max(width) as wdt from FOOTER
+),
+cte2 as (
+  SELECT car, height from FOOTER where height is not null
+)
 
+SELECT car ,len,wdt,height from cte1 ,cte2 where car is not null
