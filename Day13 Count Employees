@@ -25,7 +25,7 @@ insert into employee_managers values (15, 'Larry', 1);
 select * from employee_managers;
 
 
-
+----------------------Solution----------------------------------------
 
 select mng.name as manager, count(emp.name) as employee
 from employee_managers emp
