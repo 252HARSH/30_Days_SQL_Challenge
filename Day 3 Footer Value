@@ -16,7 +16,6 @@ INSERT INTO FOOTER VALUES (5, 'Kia Sportage', NULL, NULL, 18);
 
 SELECT * FROM FOOTER;
 
-
 -----------------Solution---------------------------------------
 Solution:-
 with cte1 as(
